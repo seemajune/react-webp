@@ -1,12 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import AssignmentList from './assignmentList.jsx'
+import AssignmentCard from './AssignmentCard.jsx'
 
-let cards = [
-    {'title': 'MCAT Assignment 1', 'id': 1},
-    {'title': 'MCAT Assignment 2', 'id': 2},
-    {'title': 'MCAT Assignment 3', 'id': 3}
-];
+let assignment = [
+    {'title': 'MCAT Assignment', 'subtitle': 'MCAT Diagnostic Exam', 'id': 1}
+]
 
-ReactDOM.render(<AssignmentList cards={cards} />, document.getElementById("baseElement"))
+ReactDOM.render(<AssignmentCard card={assignment} />, document.getElementById("assignment"))
