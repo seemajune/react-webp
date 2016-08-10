@@ -1,12 +1,12 @@
 import React from 'react'
 
-class CardList extends React.Component {
+class AssignmentList extends React.Component {
     render() {
         let elements = this.props.cards.map((element) => {
-            return (<li key={element.id}>{element.name}</li>)
+            return (<li key={element.id}>{element.title}</li>)
         })
         return <ul>{elements}</ul>
     }
 }
 
-export default CardList
+export default AssignmentList
