@@ -1,12 +1,12 @@
 import React from 'react'
-import Card from './card'
 
 class AssignmentCard extends React.Component {
     render() {
-        let cardDetails = this.props.card.map((assignment) => {
-            return (<h1 key={assignment.id}>{assignment.title}</h1>)
-        })
-        return <div>{cardDetails}</div>
+    	console.log(this.props)
+        return (<div><h1>{this.props.assignment.title}</h1>
+        			<h2>{this.props.assignment.subtitle}</h2>
+        			<button>{this.props.assignment.buttonText}</button>
+        		</div>)
     }
 }
 
