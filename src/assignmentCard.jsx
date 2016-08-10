@@ -3,9 +3,14 @@ import React from 'react'
 class AssignmentCard extends React.Component {
     render() {
     	console.log(this.props)
-        return (<div><h1>{this.props.assignment.title}</h1>
-        			<h2>{this.props.assignment.subtitle}</h2>
-        			<button>{this.props.assignment.buttonText}</button>
+        return (<div className="card card__details">
+        			<div className="card__title">
+        				<h2>{this.props.assignment.title}</h2>
+        			</div>
+    				<div className="card__summary">
+    					<p>{this.props.assignment.subtitle}</p>
+    				</div>
+        			<button className="btn btn__watch">{this.props.assignment.buttonText}</button>
         		</div>)
     }
 }
