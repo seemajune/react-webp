@@ -2,16 +2,19 @@ import React from 'react'
 
 class AssignmentCard extends React.Component {
     render() {
-    	console.log(this.props)
-        return (<div className="card card__details">
+
+        return (<div>{this.props.assignments.map((assignment,index) => (
+                <div key={assignment.id}>
+                <div className="card card__details">
         			<div className="card__title">
-        				<h2>{this.props.assignment.title}</h2>
+        				<h2>{assignment.title}</h2>
         			</div>
     				<div className="card__summary">
-    					<p>{this.props.assignment.subtitle}</p>
+    					<p>{assignment.title}</p>
     				</div>
-        			<button className="btn btn__watch">{this.props.assignment.buttonText}</button>
-        		</div>)
+        			<button className="btn btn__watch">watch</button>
+        		</div></div>))}
+            </div>);
     }
 }
 
