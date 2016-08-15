@@ -7,10 +7,10 @@ class AssignmentCard extends React.Component {
                 <div key={assignment.id}>
                 <div className="card card__details">
         			<div className="card__title">
-        				<h2>{assignment.title}</h2>
+        				<h2>MCAT Assignment {assignment.id}</h2>
         			</div>
     				<div className="card__summary">
-    					<p>{assignment.title}</p>
+    					<p>{assignment.subtitle}</p>
     				</div>
         			<button className="btn btn__watch">watch</button>
         		</div></div>))}
